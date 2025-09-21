@@ -45,12 +45,6 @@
       font-weight: bold;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-    }
-
     label {
       font-size: 14px;
       margin: 5px ;
@@ -85,6 +79,7 @@
       text-align: center;
       text-decoration: none;
       transition: 0.5s ease;
+      width: 100%;
     }
     .btn:hover {
       background: #357ABD;
@@ -145,7 +140,8 @@
     <h1 class="title">Get a Job <span>2025</span></h1>
     <p class="Selamat-datang">Selamat Datang</p>
 
-    <form>
+    <!-- Gak pake form action -->
+    <div>
       <label>Masukan Email</label>
       <input type="email" name="email" placeholder="Masukkan Email" required>
 
@@ -153,20 +149,5 @@
       <input type="password" name="password" placeholder="Password" required>
       <a href="#" class="Lupa">Lupa password ?</a>
       
-      <!-- Tombol masuk langsung redirect ke regis.html -->
-      <button type="button" class="btn" onclick="window.location.href='regis.html'">
-        Masuk
-      </button>
-
-      <div class="Atau">Atau</div>
-
-      <button type="button" class="google">
-        <img src="https://img.icons8.com/color/20/000000/google-logo.png"/> 
-        Atau dengan Google
-      </button>
-
-      <p class="Belum-punya-akun">Belum punya akun?<span class="Daftar"> Daftar</span></p>
-    </form>
-  </div>
-</body>
-</html>
+      <!-- Tombol ini langsung redirect -->
+      <button class="btn" onclick="window.location.href='regis.html'">
