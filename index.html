@@ -15,7 +15,6 @@
       justify-content: center;
       align-items: center;
       padding-top: 100px;
-      
     }
     
     .container {
@@ -25,144 +24,139 @@
       width: 320px;
       box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
       text-align: center;
-     }
+    }
 
     .title {
       font-family: "Times New Roman", serif;
       font-size: 28px;
       font-weight: bold;
       margin-bottom: 5px;
-      
-     }
+    }
 
     .title span {
       display: block;
       font-size: 12px;
       font-weight: normal;
-     } 
+    } 
 
     .Selamat-datang {
       font-size: 18px;
       margin-bottom: 20px;
       font-weight: bold;
-     }
+    }
 
     form {
       display: flex;
       flex-direction: column;
       text-align: left;
-     }
+    }
 
     label {
       font-size: 14px;
       margin: 5px ;
-     }
+    }
 
     input {
       padding: 10px;
       border: 1px solid #4a90e2;
       border-radius: 8px;
       margin-bottom: 10px;
-      transition: all 0.s ease
-     }
+      transition: all 0.3s ease;
+    }
     
-     .Lupa {
+    .Lupa {
       font-size: 12px;
       text-align: right;
       margin-bottom: 15px;
       color: #4a90e2;
       text-decoration: none;
-     }
-
-     .btn {
-       background: #4a90e2;
-       color: white;
-       border: none;
-       padding: 12px;
-       border-radius: 8px;
-       font-size: 16px;
-       cursor: pointer;
-       margin-top: 10px;
-       margin-bottom: 15px;
-       text-align: center;
-       text-decoration: none;
-       transition: 0.5s ease;
-      }
-      .btn:hover {
-        background: #357ABD;
-        transform: scale(1.02);
-        box-shadow: 0px 6px 10px rgba(0, 0, 0, 1);
-        
-      }
-      
-      .google {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 10px;
-        background: white;
-        cursor: pointer;
-        margin-bottom: 15px;
-        transition: 0.5s ease;
-      }
-      .google:hover{
-        background: rgba(147, 146, 146,0.4);
-        transform: scale(1.02);
-        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-        
-      }
-      .Atau {
-        text-align: center;
-        margin: 10px 0;
-        color: #777;
-      }
-      
-      .Belum-punya-akun{
-        text-align: center;
-        font-size: 14px;
-      }
-      
-      .Belum-punya-akun a {
-        color: #4a90e2;
-        font-weight: bold;
-        text-decoration: transparent;
-        transition: 0.5 ease;
     }
-    .Belum-punya-akun a :hover {
-      background: #373d43;
-      transform: scale(0.5s);
-      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);      
+
+    .btn {
+      background: #4a90e2;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      text-align: center;
+      text-decoration: none;
+      transition: 0.5s ease;
+    }
+    .btn:hover {
+      background: #357ABD;
+      transform: scale(1.02);
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 1);
+    }
+      
+    .google {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      background: white;
+      cursor: pointer;
+      margin-bottom: 15px;
+      transition: 0.5s ease;
+    }
+    .google:hover{
+      background: rgba(147, 146, 146,0.4);
+      transform: scale(1.02);
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    }
+    .Atau {
+      text-align: center;
+      margin: 10px 0;
+      color: #777;
+    }
+      
+    .Belum-punya-akun{
+      text-align: center;
+      font-size: 14px;
+    }
+      
+    .Belum-punya-akun a {
+      color: #4a90e2;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    .Belum-punya-akun a:hover {
+      color: #357ABD;     
     }
     .Daftar{
       color: #4a90e2;
       font-weight: bold;
-      transition: 0.5 ease;
-     }
-     .Daftar:hover{
-      color: #357ABD;
-      transform: scale(0.5s);
+      transition: 0.3s ease;
     }
-    </style>
+    .Daftar:hover{
+      color: #357ABD;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1 class="title">Get a Job <span>2025</span></h1>
-    <p class="Selamat-datang">selamat datang</p>
+    <p class="Selamat-datang">Selamat Datang</p>
 
-    <form action="regis.html" method="post">
-        
-      <label >Masukan Email</label>
+    <form>
+      <label>Masukan Email</label>
       <input type="email" name="email" placeholder="Masukkan Email" required>
 
       <label>Masukan Password</label>
       <input type="password" name="password" placeholder="Password" required>
       <a href="#" class="Lupa">Lupa password ?</a>
       
-      <button type="submit" class="btn">Masuk</button>
-
+      <!-- Tombol masuk langsung redirect ke regis.html -->
+      <button type="button" class="btn" onclick="window.location.href='regis.html'">
+        Masuk
+      </button>
 
       <div class="Atau">Atau</div>
 
